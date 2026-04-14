@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Form Mapper</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, "Segoe UI", sans-serif;
+        --bg: #f4f7fb;
+        --panel: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --line: #dbe3ef;
+        --brand: #2563eb;
+        --brand-dark: #1d4ed8;
+        --shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        width: 390px;
+        min-height: 560px;
+        background:
+          radial-gradient(circle at top right, rgba(37, 99, 235, 0.16), transparent 28%),
+          linear-gradient(180deg, #eef4ff 0%, var(--bg) 38%, #f8fafc 100%);
+        color: var(--text);
+      }
+
+      .shell {
+        padding: 16px;
+      }
+
+      .hero {
+        margin-bottom: 12px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(37, 99, 235, 0.12);
+        color: var(--brand-dark);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 12px 0 6px;
+        font-size: 22px;
+        line-height: 1.15;
+      }
+
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .panel {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: var(--panel);
+        border: 1px solid rgba(219, 227, 239, 0.92);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        padding: 14px;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .status {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .refresh {
+        border: 0;
+        border-radius: 999px;
+        padding: 9px 13px;
+        background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+      }
+
+      .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .new-chat {
+        border: 1px solid rgba(37, 99, 235, 0.18);
+        border-radius: 999px;
+        padding: 9px 13px;
+        background: #ffffff;
+        color: var(--brand-dark);
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .refresh:disabled,
+      .new-chat:disabled,
+      .send:disabled {
+        cursor: progress;
+        opacity: 0.78;
+      }
+
+      .page-meta {
+        padding: 10px 12px;
+        border-radius: 14px;
+        background: #f8fafc;
+        border: 1px solid var(--line);
+        font-size: 12px;
+        line-height: 1.45;
+        color: #334155;
+      }
+
+      .messages {
+        height: 320px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 4px 2px;
+      }
+
+      .message {
+        display: flex;
+      }
+
+      .message.user {
+        justify-content: flex-end;
+      }
+
+      .message.assistant {
+        justify-content: flex-start;
+      }
+
+      .bubble {
+        max-width: 85%;
+        padding: 10px 12px;
+        border-radius: 14px;
+        font-size: 13px;
+        line-height: 1.5;
+        word-break: break-word;
+      }
+
+      .message.user .bubble {
+        background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+        color: #fff;
+      }
+
+      .message.assistant .bubble {
+        background: #e2e8f0;
+        color: #0f172a;
+      }
+
+      .bubble a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .composer {
+        display: flex;
+        gap: 10px;
+      }
+
+      .input {
+        flex: 1;
+        min-width: 0;
+        border: 1px solid #cbd5e1;
+        border-radius: 999px;
+        padding: 11px 14px;
+        font: inherit;
+        outline: none;
+        background: #fff;
+        color: #0f172a;
+      }
+
+      .input:focus {
+        border-color: var(--brand);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+      }
+
+      .send {
+        border: 0;
+        border-radius: 999px;
+        padding: 11px 16px;
+        background: linear-gradient(135deg, #111827, var(--brand));
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <span class="eyebrow">Form Mapping AI</span>
+        <h1>AI Form Mapper</h1>
+        <p class="sub">Paste user details and get strict JSON mapped to the current page's form fields.</p>
+      </section>
+
+      <section class="panel">
+        <div class="row">
+          <span id="status" class="status">Loading...</span>
+          <div class="toolbar">
+            <button id="newChatButton" class="new-chat" type="button">New Chat</button>
+            <button id="refreshButton" class="refresh" type="button">Refresh Context</button>
+          </div>
+        </div>
+
+        <div id="pageMeta" class="page-meta">Scanning the current page for form fields...</div>
+        <div id="messages" class="messages"></div>
+
+        <form id="chatForm" class="composer">
+          <input
+            id="chatInput"
+            class="input"
+            type="text"
+            placeholder="Paste user details for this form..."
+            autocomplete="off"
+          />
+          <button id="sendButton" class="send" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
