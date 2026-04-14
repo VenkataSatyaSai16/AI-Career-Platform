@@ -1,0 +1,579 @@
+Failed to bootstrap application MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDatabase (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\src\config\db.js:7:3)
+    at async bootstrap (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\src\server.js:9:3) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017' => [ServerDescription],
+      'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017' => [ServerDescription],
+      'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-sw9863-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017' => [ServerDescription],
+      'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017' => [ServerDescription],
+      'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-sw9863-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  }
+}
+C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:327
+                const timeoutError = new error_1.MongoServerSelectionError(`Server selection timed out after ${timeout?.duration} ms`, this.description);
+                                     ^
+
+MongoServerSelectionError: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+
+    at Topology.selectServer (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:327:38)
+    at async Topology._connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:200:28)
+    at async Topology.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:152:13)
+    at async topologyConnect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:264:17)
+    at async MongoClient._connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:277:13)
+    at async MongoClient.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:202:13)
+    at async MongoClient.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:446:16) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626137383,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      },
+      'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626137959,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      },
+      'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626137953,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-sw9863-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+  
+      at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: [Error: 480B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+    ] {
+      library: 'SSL routines',
+      reason: 'tlsv1 alert internal error',
+      code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+    }
+  }
+}
+
+Node.js v22.20.0
+C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:327
+                const timeoutError = new error_1.MongoServerSelectionError(`Server selection timed out after ${timeout?.duration} ms`, this.description);
+                                     ^
+
+MongoServerSelectionError: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+
+    at Topology.selectServer (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:327:38)
+    at async Topology._connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:200:28)
+    at async Topology.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:152:13)
+    at async topologyConnect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:264:17)
+    at async MongoClient._connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:277:13)
+    at async MongoClient.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:202:13)
+    at async MongoClient.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:446:16) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626216229,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      },
+      'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626216302,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      },
+      'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626216337,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-sw9863-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+  
+      at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: [Error: 401C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+    ] {
+      library: 'SSL routines',
+      reason: 'tlsv1 alert internal error',
+      code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+    }
+  }
+}
+
+Node.js v22.20.0
+C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:327
+                const timeoutError = new error_1.MongoServerSelectionError(`Server selection timed out after ${timeout?.duration} ms`, this.description);
+                                     ^
+
+MongoServerSelectionError: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+
+    at Topology.selectServer (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:327:38)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+    at async Topology._connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:200:28)
+    at async Topology.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\sdam\topology.js:152:13)
+    at async topologyConnect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:264:17)
+    at async MongoClient._connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:277:13)
+    at async MongoClient.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:202:13)
+    at async MongoClient.connect (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\mongo_client.js:446:16) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-00.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626298825,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      },
+      'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-01.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626298829,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      },
+      'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-6okr2cv-shard-00-02.gh8hl1o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 626298820,
+        lastWriteDate: 0,
+        error: MongoNetworkError: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+        
+            at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+            at Object.onceWrapper (node:events:634:26)
+            at TLSSocket.emit (node:events:519:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          errorLabelSet: Set(1) { 'ResetPool' },
+          beforeHandshake: false,
+          [cause]: [Error: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null,
+        iscryptd: false
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-sw9863-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+  
+      at TLSSocket.<anonymous> (C:\Users\evenk\OneDrive\Desktop\AI-Interview\backend\node_modules\mongodb\lib\cmap\connect.js:286:44)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: [Error: 54220000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+    ] {
+      library: 'SSL routines',
+      reason: 'tlsv1 alert internal error',
+      code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+    }
+  }
+}
+
+Node.js v22.20.0

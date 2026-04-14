@@ -1,5 +1,9 @@
 node_modules
+<<<<<<< HEAD
 .env
 backend/.env
 backend/node_modules
 *.log
+=======
+.env
+>>>>>>> c59beac (Initial Commit)

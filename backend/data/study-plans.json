@@ -1,0 +1,579 @@
+{
+  "users": {
+    "admin": {
+      "plan": {
+        "summary": "This 30-day plan for Graphs in DSA is tailored to a beginner learner preparing for general learning. It balances foundations, applied practice, revision, and checkpoints so the learner can move steadily toward general learning.",
+        "days": [
+          {
+            "day": 1,
+            "title": "Graphs in DSA foundations",
+            "focus": "Review the core building blocks, terminology, and must-know concepts in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Start by making short notes you can revise quickly."
+          },
+          {
+            "day": 2,
+            "title": "Graphs in DSA key workflows",
+            "focus": "Understand the most common workflows, patterns, and problem types in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Connect each concept to one real example."
+          },
+          {
+            "day": 3,
+            "title": "Graphs in DSA practical application",
+            "focus": "Apply Graphs in DSA concepts in the style of general learning. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice under realistic constraints instead of only reading."
+          },
+          {
+            "day": 4,
+            "title": "Graphs in DSA weak-area repair",
+            "focus": "Revisit weak areas, fill gaps, and explain tricky topics in your own words. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Treat this as a correction day and capture mistakes."
+          },
+          {
+            "day": 5,
+            "title": "Graphs in DSA checkpoint and revision",
+            "focus": "Run a checkpoint session, summarize your progress, and revise important takeaways. Use this session for mock review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "End with a quick self-test or mini mock."
+          },
+          {
+            "day": 6,
+            "title": "Graphs in DSA foundations",
+            "focus": "Review the core building blocks, terminology, and must-know concepts in Graphs in DSA. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Start by making short notes you can revise quickly."
+          },
+          {
+            "day": 7,
+            "title": "Graphs in DSA key workflows",
+            "focus": "Understand the most common workflows, patterns, and problem types in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Connect each concept to one real example."
+          },
+          {
+            "day": 8,
+            "title": "Graphs in DSA practical application",
+            "focus": "Apply Graphs in DSA concepts in the style of general learning. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice under realistic constraints instead of only reading."
+          },
+          {
+            "day": 9,
+            "title": "Graphs in DSA weak-area repair",
+            "focus": "Revisit weak areas, fill gaps, and explain tricky topics in your own words. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Treat this as a correction day and capture mistakes."
+          },
+          {
+            "day": 10,
+            "title": "Graphs in DSA checkpoint and revision",
+            "focus": "Run a checkpoint session, summarize your progress, and revise important takeaways. Use this session for mock review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "End with a quick self-test or mini mock."
+          },
+          {
+            "day": 11,
+            "title": "Graphs in DSA foundations",
+            "focus": "Review the core building blocks, terminology, and must-know concepts in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Start by making short notes you can revise quickly."
+          },
+          {
+            "day": 12,
+            "title": "Graphs in DSA key workflows",
+            "focus": "Understand the most common workflows, patterns, and problem types in Graphs in DSA. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Connect each concept to one real example."
+          },
+          {
+            "day": 13,
+            "title": "Graphs in DSA practical application",
+            "focus": "Apply Graphs in DSA concepts in the style of general learning. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice under realistic constraints instead of only reading."
+          },
+          {
+            "day": 14,
+            "title": "Graphs in DSA weak-area repair",
+            "focus": "Revisit weak areas, fill gaps, and explain tricky topics in your own words. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Treat this as a correction day and capture mistakes."
+          },
+          {
+            "day": 15,
+            "title": "Graphs in DSA checkpoint and revision",
+            "focus": "Run a checkpoint session, summarize your progress, and revise important takeaways. Use this session for mock review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "End with a quick self-test or mini mock."
+          },
+          {
+            "day": 16,
+            "title": "Graphs in DSA foundations",
+            "focus": "Review the core building blocks, terminology, and must-know concepts in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Start by making short notes you can revise quickly."
+          },
+          {
+            "day": 17,
+            "title": "Graphs in DSA key workflows",
+            "focus": "Understand the most common workflows, patterns, and problem types in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Connect each concept to one real example."
+          },
+          {
+            "day": 18,
+            "title": "Graphs in DSA practical application",
+            "focus": "Apply Graphs in DSA concepts in the style of general learning. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice under realistic constraints instead of only reading."
+          },
+          {
+            "day": 19,
+            "title": "Graphs in DSA weak-area repair",
+            "focus": "Revisit weak areas, fill gaps, and explain tricky topics in your own words. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Treat this as a correction day and capture mistakes."
+          },
+          {
+            "day": 20,
+            "title": "Graphs in DSA checkpoint and revision",
+            "focus": "Run a checkpoint session, summarize your progress, and revise important takeaways. Use this session for mock review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "End with a quick self-test or mini mock."
+          },
+          {
+            "day": 21,
+            "title": "Graphs in DSA foundations",
+            "focus": "Review the core building blocks, terminology, and must-know concepts in Graphs in DSA. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Start by making short notes you can revise quickly."
+          },
+          {
+            "day": 22,
+            "title": "Graphs in DSA key workflows",
+            "focus": "Understand the most common workflows, patterns, and problem types in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Connect each concept to one real example."
+          },
+          {
+            "day": 23,
+            "title": "Graphs in DSA practical application",
+            "focus": "Apply Graphs in DSA concepts in the style of general learning. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice under realistic constraints instead of only reading."
+          },
+          {
+            "day": 24,
+            "title": "Graphs in DSA weak-area repair",
+            "focus": "Revisit weak areas, fill gaps, and explain tricky topics in your own words. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Treat this as a correction day and capture mistakes."
+          },
+          {
+            "day": 25,
+            "title": "Graphs in DSA checkpoint and revision",
+            "focus": "Run a checkpoint session, summarize your progress, and revise important takeaways. Use this session for mock review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "End with a quick self-test or mini mock."
+          },
+          {
+            "day": 26,
+            "title": "Graphs in DSA foundations",
+            "focus": "Review the core building blocks, terminology, and must-know concepts in Graphs in DSA. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Start by making short notes you can revise quickly."
+          },
+          {
+            "day": 27,
+            "title": "Graphs in DSA key workflows",
+            "focus": "Understand the most common workflows, patterns, and problem types in Graphs in DSA. Use this session for guided practice tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Connect each concept to one real example."
+          },
+          {
+            "day": 28,
+            "title": "Graphs in DSA practical application",
+            "focus": "Apply Graphs in DSA concepts in the style of general learning. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice under realistic constraints instead of only reading."
+          },
+          {
+            "day": 29,
+            "title": "Graphs in DSA weak-area repair",
+            "focus": "Revisit weak areas, fill gaps, and explain tricky topics in your own words. Use this session for concept review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Treat this as a correction day and capture mistakes."
+          },
+          {
+            "day": 30,
+            "title": "Graphs in DSA checkpoint and revision",
+            "focus": "Run a checkpoint session, summarize your progress, and revise important takeaways. Use this session for mock review tied to general learning.",
+            "estimated_hours": 32,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "End with a quick self-test or mini mock."
+          }
+        ]
+      },
+      "originalPlan": {
+        "summary": "This 30-day DSA study plan is designed for a beginner with a general learning objective, focusing on building a strong foundation in data structures and algorithms. Each day dedicates 3 hours to cover core concepts, practical examples, and hands-on practice, progressively moving from fundamental topics to more complex areas, ensuring a comprehensive understanding.",
+        "days": [
+          {
+            "day": 1,
+            "title": "Introduction to DSA & Setup",
+            "focus": "Understand what Data Structures and Algorithms are, their importance, and set up a development environment (e.g., VS Code with a language of choice like Python/Java/C++).",
+            "estimated_hours": 3,
+            "resource_title": "Python Official Docs",
+            "resource_url": "https://docs.python.org/3/",
+            "notes": "Familiarize yourself with basic terms and choose a primary programming language for implementation."
+          },
+          {
+            "day": 2,
+            "title": "Time & Space Complexity",
+            "focus": "Learn about Big O notation, how to analyze the time and space complexity of algorithms, and common complexity classes (O(1), O(log n), O(n), O(n log n), O(n^2)).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice analyzing simple code snippets for their complexity. This is a critical foundational concept."
+          },
+          {
+            "day": 3,
+            "title": "Arrays: Basics & 1D",
+            "focus": "Understand arrays, their memory allocation, basic operations (access, insert, delete, search), and implement these operations on 1D arrays.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Focus on understanding fixed-size vs. dynamic arrays. Practice simple problems like finding min/max."
+          },
+          {
+            "day": 4,
+            "title": "Arrays: 2D & Problems",
+            "focus": "Explore 2D arrays (matrices), operations like traversal, and practice common array problems (e.g., rotating an array, finding duplicates).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Solve at least 2-3 array problems on platforms like HackerRank or LeetCode (easy category)."
+          },
+          {
+            "day": 5,
+            "title": "Strings: Basics & Operations",
+            "focus": "Understand strings as character arrays, common string operations (concatenation, substring, comparison), and basic string manipulation algorithms.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice problems like reversing a string or checking for palindromes."
+          },
+          {
+            "day": 6,
+            "title": "Linked Lists: Singly",
+            "focus": "Introduction to linked lists, comparing them with arrays, implementing a singly linked list (node creation, insertion, deletion, traversal).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Pay attention to pointer/reference manipulation. Drawing diagrams helps visualize operations."
+          },
+          {
+            "day": 7,
+            "title": "Linked Lists: Doubly & Circular",
+            "focus": "Understand and implement doubly linked lists (forward and backward traversal) and circular linked lists, exploring their specific use cases.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice inserting and deleting nodes at various positions for both types."
+          },
+          {
+            "day": 8,
+            "title": "Linked List Problems",
+            "focus": "Solve common linked list problems such as reversing a linked list, detecting cycles, and merging two sorted linked lists.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "These problems reinforce understanding of pointer manipulation. Use a debugger if stuck."
+          },
+          {
+            "day": 9,
+            "title": "Stacks",
+            "focus": "Understand the LIFO principle, implement a stack using arrays and linked lists, and learn basic operations (push, pop, peek, isEmpty, size).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Explore applications like function call stacks and expression evaluation."
+          },
+          {
+            "day": 10,
+            "title": "Queues",
+            "focus": "Understand the FIFO principle, implement a queue using arrays and linked lists, and learn basic operations (enqueue, dequeue, front, isEmpty, size).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Study circular queues for efficient array-based implementation. Look into BFS applications."
+          },
+          {
+            "day": 11,
+            "title": "Trees: Introduction & Binary Trees",
+            "focus": "Introduction to non-linear data structures, tree terminology (root, node, leaf, height, depth), and understanding binary trees.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Understand the basic structure and properties of binary trees. Implement basic node creation."
+          },
+          {
+            "day": 12,
+            "title": "Tree Traversal & Binary Search Trees",
+            "focus": "Learn different tree traversal techniques (Inorder, Preorder, Postorder, Level Order). Understand Binary Search Trees (BSTs) and implement insertion/search.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice recursive implementations for traversals. Understand why BSTs are efficient for searching."
+          },
+          {
+            "day": 13,
+            "title": "BST Operations & Problems",
+            "focus": "Implement deletion in a BST, find minimum/maximum element, and solve problems like validating a BST or finding the lowest common ancestor (LCA).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Deletion can be tricky; understand all three cases (no child, one child, two children)."
+          },
+          {
+            "day": 14,
+            "title": "Heaps: Max/Min Heap",
+            "focus": "Understand the heap data structure (complete binary tree with heap property). Implement Max-Heap and Min-Heap, including insertion and extraction of min/max.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Heaps are often implemented using arrays. Understand the 'heapify' operation."
+          },
+          {
+            "day": 15,
+            "title": "Heap Sort & Applications",
+            "focus": "Learn the Heap Sort algorithm. Explore heap applications like priority queues and finding k-th largest/smallest elements.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Practice implementing a priority queue using a heap. Heap Sort is an efficient comparison sort."
+          },
+          {
+            "day": 16,
+            "title": "Hash Tables: Introduction & Hashing",
+            "focus": "Understand hash tables (hash maps), their concept, advantages (O(1) average time complexity), and different hashing functions.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Grasp the core idea of mapping keys to indices using a hash function."
+          },
+          {
+            "day": 17,
+            "title": "Hash Collisions & Resolution",
+            "focus": "Learn about hash collisions and techniques to resolve them: Separate Chaining (using linked lists) and Open Addressing (Linear Probing, Quadratic Probing, Double Hashing).",
+            "estimated_hours": 3,
+            "resource_title": "Google ML Crash Course",
+            "resource_url": "https://developers.google.com/machine-learning/crash-course",
+            "notes": "Implement a simple hash table using separate chaining or linear probing."
+          },
+          {
+            "day": 18,
+            "title": "Sorting: Bubble, Selection, Insertion",
+            "focus": "Understand and implement basic sorting algorithms: Bubble Sort, Selection Sort, and Insertion Sort. Analyze their time complexities.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "These are important for foundational understanding, though less efficient for large datasets."
+          },
+          {
+            "day": 19,
+            "title": "Sorting: Merge Sort",
+            "focus": "Learn the divide and conquer paradigm. Understand and implement Merge Sort, analyzing its stability and time complexity (O(n log n)).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Merge Sort is a stable, efficient sort often used in practice. Focus on the merging step."
+          },
+          {
+            "day": 20,
+            "title": "Sorting: Quick Sort",
+            "focus": "Understand and implement Quick Sort, another efficient divide and conquer algorithm. Learn about pivot selection and partitioning. Analyze its average and worst-case complexities.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Quick Sort is often faster in practice due to better cache performance, despite worst-case O(n^2)."
+          },
+          {
+            "day": 21,
+            "title": "Searching: Linear & Binary Search",
+            "focus": "Understand and implement Linear Search and Binary Search. Learn the prerequisites for Binary Search (sorted array) and analyze their complexities.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Binary search is a fundamental and highly efficient algorithm for sorted data."
+          },
+          {
+            "day": 22,
+            "title": "Introduction to Graphs",
+            "focus": "Understand graph terminology (vertices, edges, directed, undirected, weighted, cycles). Represent graphs using Adjacency Matrix and Adjacency List.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Adjacency list is generally preferred for sparse graphs. Practice creating graph representations."
+          },
+          {
+            "day": 23,
+            "title": "Graph Traversal: BFS",
+            "focus": "Learn and implement Breadth-First Search (BFS). Understand its applications (shortest path in unweighted graphs, finding connected components).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "BFS uses a queue. Trace its execution on a sample graph."
+          },
+          {
+            "day": 24,
+            "title": "Graph Traversal: DFS",
+            "focus": "Learn and implement Depth-First Search (DFS). Understand its applications (cycle detection, topological sort, finding strongly connected components).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "DFS uses a stack (or recursion). Compare and contrast BFS and DFS."
+          },
+          {
+            "day": 25,
+            "title": "Introduction to Greedy Algorithms",
+            "focus": "Understand the concept of greedy algorithms. Work through a simple greedy problem like Activity Selection Problem or fractional knapsack to grasp the strategy.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Understand when a greedy approach is optimal and when it might fail."
+          },
+          {
+            "day": 26,
+            "title": "Greedy Algorithms: Dijkstra's Algorithm",
+            "focus": "Learn and implement Dijkstra's Algorithm for finding the shortest paths from a single source to all other vertices in a weighted graph (non-negative weights).",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "This algorithm uses a priority queue. Practice tracing its execution on a sample graph."
+          },
+          {
+            "day": 27,
+            "title": "Greedy Algorithms: Prim's & Kruskal's for MST",
+            "focus": "Understand Minimum Spanning Trees (MSTs) and implement Prim's and Kruskal's algorithms to find MSTs in weighted, undirected graphs.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Prim's uses a priority queue; Kruskal's uses a Disjoint Set Union (DSU) data structure (briefly research DSU if time permits)."
+          },
+          {
+            "day": 28,
+            "title": "Introduction to Dynamic Programming",
+            "focus": "Understand the concept of Dynamic Programming (overlapping subproblems, optimal substructure). Work through basic DP problems like Fibonacci sequence or Coin Change.",
+            "estimated_hours": 3,
+            "resource_title": "C Reference",
+            "resource_url": "https://en.cppreference.com/w/c",
+            "notes": "Focus on identifying overlapping subproblems and memoization/tabulation techniques."
+          },
+          {
+            "day": 29,
+            "title": "Dynamic Programming: Common Problems",
+            "focus": "Solve classic DP problems such as Longest Common Subsequence (LCS), Knapsack Problem (0/1).",
+            "estimated_hours": 3,
+            "resource_title": "C Reference",
+            "resource_url": "https://en.cppreference.com/w/c",
+            "notes": "These problems require careful table construction (tabulation) or recursive with memoization."
+          },
+          {
+            "day": 30,
+            "title": "Review & Practice",
+            "focus": "Review all major data structures and algorithms covered. Solve a mixed set of problems from various topics on platforms like LeetCode (Easy/Medium) or HackerRank.",
+            "estimated_hours": 3,
+            "resource_title": "CP-Algorithms",
+            "resource_url": "https://cp-algorithms.com/",
+            "notes": "Identify areas of weakness and focus on them. Plan for continued practice beyond this 30-day course."
+          }
+        ]
+      },
+      "metadata": {
+        "course": "Graphs in DSA",
+        "knowledgeLevel": "beginner",
+        "preparingFor": "general learning",
+        "objective": "general learning",
+        "lastInput": "Graphs in DSA",
+        "updatedAt": "2026-03-28T05:25:57.034Z",
+        "originalDuration": 30,
+        "currentDuration": 30,
+        "lastRescheduled": {
+          "missedDays": [
+            4
+          ],
+          "tasksShifted": true,
+          "originalDuration": 30,
+          "newDuration": 30
+        },
+        "lastReplanAdjustments": "Days 1, 2, and 3 were completed. The original Day 4 ('Arrays: 2D & Problems') and Day 5 ('Strings: Basics & Operations') were missed. These two foundational topics have been logically re-prioritized and placed at the beginning of the remaining study period (new Day 4 and new Day 5). All subsequent pending topics from the original plan have been shifted forward by two days, maintaining the original content and daily estimated hours. The plan still concludes on the equivalent of the original Day 30, fitting all remaining material into 27 days.",
+        "lastReplanMissedDays": [
+          4,
+          5
+        ]
+      }
+    }
+  }
+}
